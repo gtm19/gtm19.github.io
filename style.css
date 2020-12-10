@@ -1,17 +1,22 @@
 @import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@300&display=swap');
+
+:root {
+  --background-color: #f0f3f2;
+  --color_1: #16a596;
+  --color_2: rgb(236, 82, 75);
+}
 
 body {
-  background-color: #f0f3f2;
-  color: #16a596;
+  background-color: var(--background-color);
+  color: var(--color_1);
   font-size: 1.2em;
   font-family: Roboto, sans-serif;
 }
 
 h1, h2, h3 {
-  color: #ec524b;
-  font-weight: 900;
-  font-style: italic;
+  color: var(--color_2);
+  font-family: 'Roboto Mono', monospace;
   line-height: 0.7;
 }
 
@@ -19,14 +24,14 @@ a {
   text-decoration: none;
   position: relative;
   top: 0;
-  color: rgb(236, 82, 75);
+  color: var(--color_2);
   transition-duration: 500ms;
 }
 
 .button {
   position: relative;
   top: 0;
-  background-color: rgb(236, 82, 75);
+  background-color: var(--color_2);
   color: white;
   padding: 15px;
   line-height: 3;
@@ -38,13 +43,16 @@ a:hover, .button:hover {
   top: -5px;
 }
 
-#profile-picture {
+.profile-picture {
   width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  background-color:  var(--color_2);
 }
 
-.img-circle {
-  border-radius: 50%;
-  border: 5px solid;
+.profile-picture img {
+  mix-blend-mode: screen;
 }
 
 .text-center {
@@ -74,7 +82,6 @@ a:hover, .button:hover {
   list-style: none;
   padding-left: 0px;
 }
-
 
 /* Media Queries */
 @media (max-width: 960px) {
