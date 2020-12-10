@@ -3,7 +3,7 @@
 
 body {
   background-color: #f0f3f2;
-  color: #9ad3bc;
+  color: #16a596;
   font-size: 1.2em;
   font-family: Roboto, sans-serif;
 }
@@ -17,11 +17,25 @@ h1, h2, h3 {
 
 a {
   text-decoration: none;
+  position: relative;
+  top: 0;
   color: rgb(236, 82, 75);
+  transition-duration: 500ms;
 }
 
-a:hover {
-  opacity: 0.7;
+.button {
+  position: relative;
+  top: 0;
+  background-color: rgb(236, 82, 75);
+  color: white;
+  padding: 15px;
+  line-height: 3;
+  border-radius: 3px;
+  transition-duration: 500ms;
+}
+
+a:hover, .button:hover {
+  top: -5px;
 }
 
 #profile-picture {
@@ -61,20 +75,6 @@ a:hover {
   padding-left: 0px;
 }
 
-.button {
-  background-color: rgb(236, 82, 75);
-  color: white;
-  padding: 15px;
-  line-height: 3;
-  border-radius: 3px;
-  transition-duration: 500ms;
-}
-
-.button:hover {
-  opacity: 0.7;
-  color: white;
-  border-radius: 6px;
-}
 
 /* Media Queries */
 @media (max-width: 960px) {
