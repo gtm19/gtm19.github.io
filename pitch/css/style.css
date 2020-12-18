@@ -1,16 +1,40 @@
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto&display=swap');
 
 body { 
-  font-family: 'Droid Serif';
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
-  font-weight: normal;
+  font-family: 'Fugaz One', cursive;
+}
+
+.remark-slide-content h1 {
+  font-size: 6em;
+  text-shadow: 3px 3px 0px tomato;
+}
+
+.remark-slide-content p, li {
+  font-size: 1.6rem;
+}
+
+.inverse {
+  color: white
 }
 
 .remark-code, .remark-inline-code { 
   font-family: 'Ubuntu Mono';
+}
+
+.blendy {
+  background-size: auto, cover;
+  background-image: linear-gradient(to right, rgba(49, 48, 128, 0.7), rgba(48, 76, 128, 0.7)), url(https://pbs.twimg.com/media/C0_6OZrXAAAg1QX?format=jpg&name=medium);
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
 }
